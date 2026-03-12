@@ -4,15 +4,18 @@ header {
 
 .navBar {
     position: absolute;
-    top: 20px;
+    top: 5px;
     right: 20px;
 }
 
 .navigation {
-    padding: 8px 12px 8px;
+    display: inline-block;
+    padding: 8px 12px;
     text-decoration: none;
     color: white;
+    vertical-align: middle;
 }
+
 .imgBanner {
     display: none;
 }
@@ -27,11 +30,11 @@ a[href="order.html"] {
 	text-decoration:none;
 }
 
-body.home {
+body {
     position: relative;
 }
 
-body.home::before {
+body::before {
     content: "";
     position: fixed;
     top: 0;
@@ -44,11 +47,12 @@ body.home::before {
     z-index: -1;
 }
 
-body.home {
+body {
     background-image: url("Images/CoffeeBanner.jpg");
     background-size: cover;
     background-position: center;
 }
+
 #welcome {
     margin: 40px auto 20px auto;
     font-family: Sansita, Arial, Helvetica, sans-serif;
