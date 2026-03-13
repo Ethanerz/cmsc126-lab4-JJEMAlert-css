@@ -1,5 +1,8 @@
 header {
     position: relative;
+    background: linear-gradient(135deg, var(--brown-dark) 0%, var(--brown-mid) 100%);
+    padding: 0;
+    box-shadow: var(--shadow-card);
 }
 
 .navBar {
