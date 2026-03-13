@@ -31,6 +31,8 @@ a[href="order.html"] {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     position: relative;
 }
 
@@ -108,19 +110,73 @@ footer {
 	font-size:20px;
 }
 
-/* Do changes in here to not have much merge conflict */
-
-/* Home */
-.home{
-
-}
-
 /* About */
-.about{
-
+.about .coffee:nth-of-type(3), 
+.about .coffee:nth-of-type(4) {
+  background-color: white;
 }
 
-/* Order */
-.home{
-    
+.about .coffee {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
 }
+
+.about .coffee #banner {
+  border-radius: 50%;
+}
+
+.about .coffee #about:first-child {
+    top: -15px;
+}
+
+.about .coffee #about {
+  position: relative;
+  left: -14px;
+  width: 98%;
+  background-color: #E31C79;
+  padding: 20px;
+  margin: 10px;
+}
+
+.about ul {
+    display: flex;
+    padding: 0;
+    gap: 10px;
+}
+
+.about li {
+    flex: 1;
+}
+
+.about .coffeeVideo {
+    width: 100%;
+    height: 300px;
+}
+
+.about .coffee .teamMember {
+    width: 100%;
+    height: 275px;
+    object-fit: fill;
+}
+
+.about .coffee tr {
+    display: flex;
+    padding: 0;
+    gap: 15px;
+}
+
+.about .coffee td {
+    flex: 1;
+}
+
+.about .coffee .definition {
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+	font-size: 20px;
+	font-family: Sansita, Arial, Helvetica, sans-serif;
+}
+
+/* end of About */
