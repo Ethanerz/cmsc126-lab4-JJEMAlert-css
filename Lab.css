@@ -225,3 +225,87 @@ footer {
 .coffee form input[type="submit"]:hover {
     background-color: rgba(111, 78, 55, 1);
 }
+
+/* About */
+.about .coffee:nth-of-type(3), 
+.about .coffee:nth-of-type(4) {
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.about .coffee {
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.about .coffee #banner {
+  border-radius: 50%;
+}
+
+.about .coffee #about {
+  position: relative;
+  left: 75px;
+  width: 80%;
+  border-radius: 10px;
+  background-color: #E31C79;
+  color: black;
+  font-family: Sansita, Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.about ul {
+    display: flex;
+    padding: 0;
+    gap: 10px;
+}
+
+.about li {
+    flex: 1;
+}
+
+.about .coffeeVideo {
+    width: 100%;
+    height: 300px;
+}
+
+.about .coffee .teamMember {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+}
+
+
+.about .coffee tr {
+    display: flex;
+    padding: 0;
+    gap: 15px;
+}
+
+.about .coffee td {
+    flex: 1;
+    font-family: Sansita, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about .coffee .definition {
+    width: 70%;
+    margin: auto;
+    padding: 40px;
+	font-size: 20px;
+	font-family: Sansita, Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 20px;
+}
+
+.about .coffee img[src="Images/CoffeeDrop.jpg"] {
+    height: 800px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 20px;
+}
+
+/* end of About */
