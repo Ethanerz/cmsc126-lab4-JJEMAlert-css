@@ -1,20 +1,11 @@
 header {
     position: relative;
 }
-/* ── #title — used in both header h1 and footer p ── */
-#title {
-    font-family: 'Lato', Arial, sans-serif;   
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #F5EFE6;
-    letter-spacing: 0.04em;
-    padding: 18px 24px 14px 24px;
-    background: none;
-    margin: 0;
-}
+
 
 /* ── Site Wide ── */
 .navBar {
+    font-family: Sansita, Arial, Helvetica, sans-serif;
     position: absolute;
     top: 5px;
     right: 20px;
@@ -33,10 +24,34 @@ header {
 }
 
 a[href="#bottomPage"] {
-    font-size: 20px;
+    
+    display: block;
+    margin: 40px auto;
+        left: 40px;
+	font-size: 20px;
+    padding: 10px 10px;
 	font-weight: bold;
-	text-decoration:none;
+	background: rgba(255, 255, 255, 0.65);
+    border-radius: 8px;
+    font-family: Sansita, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    position: absolute;
+	color:rgba(from #4B3621 r g b);
 }
+a[href="#title"] {
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+	font-size: 20px;
+    padding: 10px 10px;
+	font-weight: bold;
+	background: rgba(255, 255, 255, 0.65);
+    border-radius: 8px;
+    text-decoration: none;
+    position: relative;
+	color:rgba(from #4B3621 r g b);
+}
+
 
 a[href="order.html"] {
 	text-decoration:none;
@@ -72,7 +87,7 @@ body {
     margin: auto;
     padding: 30px;
 	font-size: 20px;
-	font-family: Sansita, Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .coffee img {
@@ -84,11 +99,21 @@ body {
 	border-color: rgba(from #4B3621 r g b);
 	border: 3px solid #4B3621;
 }
-
+.order a[href="#bottomPage"],
+.order a[href="#title"] {
+    display: none;
+}
+.home a[href="home.html"],
+.order a[href="order.html"],
+.about a[href="about.html"] {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    color: #F5EFE6;
+}
 /* ── Home ── */
 #welcome {
     margin: 40px auto 20px auto;
-    font-family: Sansita, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
@@ -101,32 +126,29 @@ body {
 	font-size: 20px;
     padding: 15px 35px;
 	font-weight: bold;
-	background: rgba(245, 245, 220, 0.8);
-
+	background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 8px 25px rgba(74, 46, 19, 0.7);
+    cursor: pointer;
     border-radius: 8px;
 	border-color: rgba(from #4B3621 r g b);
+	color:rgba(from #4B3621 r g b);
 	border: 3px solid #4B3621;
 }
 
-a[href="#title"] {
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-	font-weight: bold;
-	text-decoration:none;
-}
 
 /* ── end of home ── */
+
+
 
 /* ── Coffee Making Steps ── */
 .coffee ol{
 	padding: 14px 16px 14px 62px;
-	background:rgba(245, 245, 220, 0.8);
+	background:rgba(245, 245, 220, 0.8);    
 	border-radius: 10px;
 	
 	border-radius: 8px;
 	border-color: rgba(from #4B3621 r g b);
-	border: 3px solid #4B3621;
+	border: 1px solid #4B3621;
 }
 
 .coffee ol li{
@@ -146,10 +168,10 @@ a[href="#title"] {
 
 .definition {
 	text-align: justify;
-	background: rgba(from #E8F2FD r g b / 80%);
+	background:rgba(255, 255, 255, 0.65);
 	padding: 14px 16px 14px 62px;
 	margin: 20px;
-	
+	color:rgba(from #2b1c0d r g b);
 	border-radius: 10px;
 	border-color: rgba(from #4B3621 r g b);
 	border: 0px solid #4B3621;
@@ -164,6 +186,7 @@ footer {
 }
 
 footer #title {
+    font-family: Sansita, Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     padding: 8px 0 4px 0;
 }
@@ -184,6 +207,7 @@ footer p:last-child {
 /* ── Footer ── */
 
 #title {
+    font-family: Sansita, Arial, Helvetica, sans-serif;
     background-color: #A28973;
     color: white;
     padding: 10px;
@@ -320,10 +344,11 @@ footer p:last-child {
   padding: 5px;
 }
 
+
 .about .coffee #banner {
 	border-radius: 50%;
 	border:2px solid #4B3621;
-	filter: sepia(1) hue-rotate(10deg) saturate(2)  contrast(1.1);
+	filter: sepia(1) saturate(1.5) brightness(0.9) contrast(1.1);
 }
 
 .about .coffee #about {
